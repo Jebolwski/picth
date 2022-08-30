@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Eina01';
+    src: url('Eina01-Regular.eot');
+    src: url('Eina01-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Eina01-Regular.woff2') format('woff2'),
+        url('Eina01-Regular.woff') format('woff'),
+        url('Eina01-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
