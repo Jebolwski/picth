@@ -160,7 +160,10 @@
                   >Sign In</a
                 >
                 <a href="#" class="buton ms-3">Try for free</a>
-                <a href="#" class="ms-3 d-inline-block d-xl-none text-black"
+                <a
+                  href="#"
+                  class="ms-3 d-inline-block d-xl-none text-black"
+                  onclick="phone_bar_ac()"
                   ><i class="fa-solid fa-bars fa-xl"></i
                 ></a>
               </div>
@@ -169,6 +172,47 @@
         </div>
       </div>
     </div>
+    <div class="nav-bar-phone p-5">
+      <div class="h4">Product</div>
+      <div class="h4 mt-3">Presentations</div>
+      <div class="h4 mt-3">Templates</div>
+      <div class="h4 mt-3">Pricing</div>
+      <div class="h4 mt-3">Company</div>
+      <div class="h4 mt-3">Jobs</div>
+
+      <div class="h4 mt-5">Follow Us</div>
+      <div class="row mt-4">
+        <div class="col-8">
+          <div class="row">
+            <p class="col">
+              <i
+                class="fa-brands fa-twitter fa-xl"
+                style="color: rgb(109, 109, 109)"
+              ></i>
+            </p>
+            <p class="col">
+              <i
+                class="fa-brands fa-facebook fa-xl"
+                style="color: rgb(109, 109, 109)"
+              ></i>
+            </p>
+            <p class="col">
+              <i
+                class="fa-brands fa-linkedin fa-xl"
+                style="color: rgb(109, 109, 109)"
+              ></i>
+            </p>
+            <p class="col">
+              <i
+                class="fa-brands fa-instagram fa-xl"
+                style="color: rgb(109, 109, 109)"
+              ></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container mt-5 pt-4" style="z-index: -1">
       <h1
         class="main-text text-center fw-bolder position-relative title"
@@ -382,24 +426,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
       $(document).scroll(function () {
         var value = $(document).scrollTop();
         if (value > 15) {
@@ -486,6 +512,16 @@
           $(".workspace-hr-child").css({ left: "77%" });
         }
       }
+
+      function phone_bar_ac() {
+        $(".nav-bar-phone").toggle(500);
+      }
+
+      $(window).resize(function () {
+        if ($(window).width() > 540) {
+          $(".nav-bar-phone").hide();
+        }
+      });
     </script>
   </body>
 </html>
