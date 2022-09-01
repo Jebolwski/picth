@@ -175,7 +175,6 @@ a {
 }
 
 .buton {
-  border-color: #6b53ff;
   color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 5px;
@@ -202,7 +201,7 @@ a {
 }
 
 .graph-div {
-  background-image: url("https://brave.com/static-assets/images/optimized/desktop-hero-screenshot@2x.png");
+  background-image: url("https://res.cloudinary.com/pitch-software/image/upload/f_auto,c_scale,w_1200/v1620219112/website-assets/home/home-hero-ui.png");
   background-size: cover;
 }
 
@@ -312,7 +311,6 @@ a {
   z-index: 1000 !important;
   width: 70vw;
   left: -9vw;
-  transform: scale(0);
 }
 
 .product-hover p {
@@ -330,7 +328,6 @@ a {
   width: 50vw;
   z-index: 1000 !important;
   right: -20vw;
-  transform: scale(0);
 }
 
 .workspace-option {
@@ -412,6 +409,77 @@ a {
   z-index: 99999999 !important;
 }
 
+.hamburger_icon {
+  width: 36px;
+  vertical-align: bottom;
+  height: 36px;
+  position: relative;
+}
+
+.hamburger_icon_bar {
+  content: "";
+  width: 24px;
+  top: 16px;
+  left: 4px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  height: 3px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger_icon_bar::before {
+  content: "";
+  width: 24px;
+  top: -9px;
+  background-color: black;
+  position: absolute;
+  height: 3px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger_icon_bar::after {
+  content: "";
+  width: 24px;
+  top: 9px;
+  background-color: black;
+  position: absolute;
+  vertical-align: bottom;
+  height: 3px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger_icon.active .hamburger_icon_bar::before {
+  animation: rotateBarBefore 0.4s ease-out;
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+  margin-left: 50px;
+}
+
+.hamburger_icon.active .hamburger_icon_bar::after {
+  animation: rotateBarAfter 0.4s ease-out;
+  transform: rotate(-45deg) translateX(6px) translateY(-6px);
+  margin-left: 50px;
+}
+
+.hamburger_icon.active .hamburger_icon_bar {
+  animation: rotateBarNormal 0.4s ease-out;
+  background: transparent;
+  margin-left: -50px;
+}
+
+.persons-div {
+  background: linear-gradient(215deg, #8d49f7, #6b53ff);
+}
+
+.learn-more {
+  background: -webkit-linear-gradient(90deg, #9758fd, #4c66f8, #9758fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
 @keyframes fadeIn {
   0% {
     transform: scale(0);
@@ -427,6 +495,37 @@ a {
   }
   100% {
     transform: scale(0);
+  }
+}
+
+@keyframes rotateBarNormal {
+  from {
+    margin-left: 0;
+    background: transparent;
+  }
+  to {
+    margin-left: -50px;
+    background: transparent;
+  }
+}
+
+@keyframes rotateBarAfter {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(6px, -6px);
+    margin-left: 50px;
+  }
+}
+
+@keyframes rotateBarBefore {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(6px, 6px);
+    margin-left: 50px;
   }
 }
 

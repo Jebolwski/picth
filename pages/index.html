@@ -28,7 +28,7 @@
   </head>
   <body style="padding-bottom: 100px">
     <div class="top-bar">
-      <div class="row justify-content-around align-items-center py-3">
+      <div class="row justify-content-between align-items-center py-3">
         <div class="col-auto">
           <img
             src="../assets/img/pitch-pitch.png"
@@ -50,6 +50,7 @@
                     ></span>
                     <div
                       class="product product-hover shadow-lg bg-white p-4 rounded-4"
+                      style="display: none"
                     >
                       <div class="row">
                         <div class="col-auto">
@@ -110,16 +111,17 @@
                       </div>
                     </div>
                   </a>
-                  <a href="#">Presentations</a>
-                  <a href="#">Templates</a>
-                  <a href="#">Pricing</a>
-                  <a href="#" class="company position-relative">
+                  <a href="#" class="ms-2">Presentations</a>
+                  <a href="#" class="ms-2">Templates</a>
+                  <a href="#" class="ms-2">Pricing</a>
+                  <a href="#" class="company position-relative ms-2">
                     Company
                     <span class="ms-2"
                       ><i class="fa-solid fa-angle-down fa-xs company-icon"></i>
                     </span>
                     <div
                       class="company company-hover shadow-lg bg-white p-4 rounded-4"
+                      style="display: none"
                     >
                       <div class="row">
                         <div class="col-auto">
@@ -159,13 +161,13 @@
                 <a href="#" class="buton-outlined d-none d-sm-inline-block"
                   >Sign In</a
                 >
-                <a href="#" class="buton ms-3">Try for free</a>
+                <a href="#" class="buton d-inline-block ms-3">Try for free</a>
                 <a
-                  href="#"
-                  class="ms-3 d-inline-block d-xl-none text-black"
+                  class="ms-3 d-inline-block d-xl-none text-black hamburger_icon"
                   onclick="phone_bar_ac()"
-                  ><i class="fa-solid fa-bars fa-xl"></i
-                ></a>
+                >
+                  <p class="hamburger_icon_bar"></p>
+                </a>
               </div>
             </div>
           </div>
@@ -250,13 +252,13 @@
       <div class="graph">
         <div class="row justify-content-center">
           <div
-            class="graph-div rounded-4 shadow-lg"
+            class="graph-div rounded-2 shadow-lg"
             style="margin-top: 60px"
           ></div>
         </div>
       </div>
       <div class="sponsors mt-5 pt-5">
-        <h2 class="text-center h2 fw-bolder">
+        <h2 class="text-center h2 fw-bolder mt-5">
           Loved by teams around the world
         </h2>
         <div class="mt-5 sponsors-flex">
@@ -367,7 +369,7 @@
         </div>
         <div class="mt-4">
           <video
-            class="video-parent-1"
+            class="video-parent-1 shadow-sm"
             style="width: 80%; margin-left: 10%; transition: 0.4s ease-in"
             autoplay
           >
@@ -378,7 +380,7 @@
             />
           </video>
           <video
-            class="video-parent-2"
+            class="video-parent-2 shadow-sm"
             style="
               width: 80%;
               margin-left: 10%;
@@ -394,7 +396,7 @@
             />
           </video>
           <video
-            class="video-parent-3"
+            class="video-parent-3 shadow-sm"
             style="
               width: 80%;
               margin-left: 10%;
@@ -409,6 +411,94 @@
               type="video/webm"
             />
           </video>
+        </div>
+        <p class="fs-5 text-center my-5">
+          Channel your big idea into a professional-level pitch deck that’s
+          designed to convince.
+          <span class="learn-more fw-bolder">Learn more</span>
+        </p>
+      </div>
+      <div class="person row gap-3 justify-content-center mt-5">
+        <div class="persons-div col-11 mt-5 rounded-5 p-5">
+          <div class="row">
+            <div class="col d-none d-md-block">
+              <p
+                class="fw-bolder fs-3 text-white d-flex justify-content-center align-items-center ms-5"
+                style="line-height: 2.5rem"
+              >
+                “Pitch strikes the perfect balance between design guardrails and
+                flexibility. They’ve brought everything I expect in a modern
+                collaboration tool to presentations and it’s awesome!”
+              </p>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="text-center">
+                <img
+                  src="https://res.cloudinary.com/pitch-software/image/upload/v1617110331/website-images/customer%20quotes/christophe-pasquier.png"
+                  style="
+                    width: 130px;
+                    border-radius: 50%;
+                    border: 6px solid #fdd60d;
+                  "
+                />
+              </div>
+              <p class="fw-bolder text-white mt-4">
+                Nick Ionita,
+                <span class="fw-light"> CEO and Co-Founder </span>
+              </p>
+              <div class="text-center mt-3">
+                <img
+                  src="https://res.cloudinary.com/pitch-software/image/upload/website-images/customer%20quotes/flux-vector_xvrezb.svg"
+                />
+              </div>
+            </div>
+
+            <div class="d-block d-md-none">
+              <div class="text-center">
+                <img
+                  src="https://res.cloudinary.com/pitch-software/image/upload/v1617110331/website-images/customer%20quotes/christophe-pasquier.png"
+                  style="
+                    width: 130px;
+                    border-radius: 50%;
+                    border: 6px solid #fdd60d;
+                  "
+                />
+              </div>
+              <p class="fw-bolder text-white text-center mt-4">
+                Nick Ionita,
+                <span class="fw-light"> CEO and Co-Founder </span>
+              </p>
+              <div class="text-center my-4">
+                <img
+                  src="https://res.cloudinary.com/pitch-software/image/upload/website-images/customer%20quotes/flux-vector_xvrezb.svg"
+                />
+              </div>
+            </div>
+
+            <div class="d-block d-md-none">
+              <p
+                class="fw-bolder fs-3 text-white text-center d-flex justify-content-center align-items-center"
+                style="line-height: 2.5rem"
+              >
+                “Pitch strikes the perfect balance between design guardrails and
+                flexibility. They’ve brought everything I expect in a modern
+                collaboration tool to presentations and it’s awesome!”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="build mt-5">
+        <h2 class="h1 fw-bolder text-center mt-5">
+          Build stunning decks in <br />
+          record time
+        </h2>
+        <div class="row justify-content-center">
+          <p class="h5 col-10 col-md-8 col-lg-6 mt-3 text-center">
+            Pitch puts everything you need to make a great deck from advanced
+            design options to data integrations right at your fingertips. It’s
+            never been easier to create work you’re proud of.
+          </p>
         </div>
       </div>
     </div>
@@ -464,29 +554,22 @@
       $(".product").hover(
         function () {
           $(".product-icon").addClass("turn-upside");
-          $(".product-hover").addClass("fadeIn");
-          $(".product-hover").removeClass("fadeOut");
-          $(".product-hover").css("transform", "scale(" + 1 + ")");
+          $(".product-hover").fadeIn(300);
         },
         function () {
           $(".product-icon").removeClass("turn-upside");
-          $(".product-hover").addClass("fadeOut");
-          $(".product-hover").css("transform", "scale(" + 0 + ")");
+          $(".product-hover").fadeOut(300);
         }
       );
 
       $(".company").hover(
         function () {
           $(".company-icon").addClass("turn-upside");
-          $(".company-hover").addClass("fadeIn");
-          $(".company-hover").removeClass("fadeOut");
-          $(".company-hover").css("transform", "scale(" + 1 + ")");
+          $(".company-hover").fadeIn(300);
         },
         function () {
           $(".company-icon").removeClass("turn-upside");
-          $(".company-hover").removeClass("fadeIn");
-          $(".company-hover").addClass("fadeOut");
-          $(".company-hover").css("transform", "scale(" + 0 + ")");
+          $(".company-hover").fadeOut(300);
         }
       );
 
@@ -515,11 +598,13 @@
 
       function phone_bar_ac() {
         $(".nav-bar-phone").toggle(500);
+        $(".hamburger_icon").toggleClass("active");
       }
 
       $(window).resize(function () {
         if ($(window).width() > 540) {
           $(".nav-bar-phone").hide();
+          $(".hamburger_icon").removeClass("active");
         }
       });
     </script>
